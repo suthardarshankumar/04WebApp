@@ -1,0 +1,4 @@
+// API login placeholder
+export default function handler(req, res) {
+  res.status(200).json({ message: 'login' });
+}
