@@ -56,7 +56,7 @@ export default async function handler(req, res) {
       secure: process.env.NODE_ENV === "production",
       sameSite: "strict",
       path: "/",
-      maxAge: 30 * 60, // 30 minutes
+      maxAge: 60 * 60, // 30 minutes
     });
 
     res.setHeader("Set-Cookie", cookie);
